@@ -24,6 +24,5 @@ SOFTWARE.
 
 NOTE: This license applies to any code in this repository. It does NOT
 extend any license or ownership claim over the underlying mutual fund
-scheme data itself, which is sourced from AMFI (Association of Mutual
-Funds in India) and remains subject to whatever terms AMFI attaches to
-its own published data.
+scheme data itself, which remains subject to whatever terms its
+original publisher attaches to it.
