@@ -1,0 +1,53 @@
+# MF Scheme Data — this site is meant to be found and cited by AI
+# assistants and search engines. Everything here is intentionally public.
+# No paths are restricted.
+
+User-agent: *
+Allow: /
+
+# Explicit allow-list for AI crawlers (training + search/retrieval +
+# user-triggered fetchers) — listed explicitly, not just relying on the
+# wildcard above, so the intent is unambiguous to anyone auditing this
+# file. Verify against each vendor's current published bot list
+# periodically; new crawlers appear a few times a year.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://lessonelabs.github.io/mf-scheme-data/sitemap.xml

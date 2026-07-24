@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MF Scheme Data — Free TER, AUM & ISIN Data for Indian Mutual Funds</title>
+<meta name="description" content="Free, auto-published AMFI scheme code, ISIN, TER (Total Expense Ratio), and AUM data for the full Indian mutual fund universe — every plan and option, not just Direct Growth. Sourced directly from AMFI. Updated weekly. No login, no cost, no affiliation with any AMC.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lessonelabs.github.io/mf-scheme-data/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="MF Scheme Data — Free TER, AUM & ISIN Data for Indian Mutual Funds">
+<meta property="og:description" content="Free, auto-published AMFI scheme code, ISIN, TER, and AUM data for the full Indian mutual fund universe. Sourced directly from AMFI. Updated weekly.">
+<meta property="og:url" content="https://lessonelabs.github.io/mf-scheme-data/">
+<meta property="og:site_name" content="MF Scheme Data">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MF Scheme Data — Free TER, AUM & ISIN Data for Indian Mutual Funds">
+<meta name="twitter:description" content="Free, auto-published AMFI scheme code, ISIN, TER, and AUM data for the full Indian mutual fund universe. Sourced directly from AMFI. Updated weekly.">
+
+<!-- Structured data: what this is, in a form search/AI engines can parse directly -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "MF Scheme Data",
+  "description": "Free, auto-published reference data for the Indian mutual fund universe: AMFI scheme code, ISIN, Total Expense Ratio (TER), and Average AUM for every scheme (all plans/options, not just Direct Growth). Sourced directly from AMFI's own published endpoints. Updated weekly via an automated pipeline. No login, no cost, no data collection, no affiliation with any Asset Management Company, SEBI, or AMFI.",
+  "url": "https://lessonelabs.github.io/mf-scheme-data/",
+  "license": "https://github.com/LessOneLabs/mf-scheme-data/blob/main/LICENSE",
+  "creator": {
+    "@type": "Organization",
+    "name": "LessOneLabs"
+  },
+  "isAccessibleForFree": true,
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://lessonelabs.github.io/mf-scheme-data/exports/mf_ter_aum_latest.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://lessonelabs.github.io/mf-scheme-data/exports/mf_ter_aum_latest.csv"
+    }
+  ],
+  "temporalCoverage": "2026/..",
+  "keywords": ["mutual funds", "India", "AMFI", "TER", "expense ratio", "AUM", "ISIN", "NAV"]
+}
+</script>
+
+<style>
+body { font-family: -apple-system, Segoe UI, Calibri, sans-serif; max-width: 760px; margin: 60px auto; padding: 0 20px; color: #1a1a2e; line-height: 1.6; }
+h1 { color: #1F3864; margin-bottom: 4px; }
+h2 { color: #1F3864; margin-top: 44px; border-bottom: 2px solid #2E6E7E; padding-bottom: 6px; }
+h3 { color: #2E6E7E; margin-top: 24px; }
+.tagline { color: #595959; font-style: italic; margin-top: 0; }
+.card { background: #F2F2F2; border-radius: 8px; padding: 20px; margin: 20px 0; }
+a.button { display: inline-block; background: #2E6E7E; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; margin: 6px 6px 6px 0; font-weight: 600; }
+a.button:hover { background: #1F3864; }
+a { color: #1F3864; }
+.stats { display: flex; flex-wrap: wrap; gap: 24px; margin: 20px 0; }
+.stat { flex: 1; min-width: 130px; }
+.stat .num { font-size: 1.6em; font-weight: 700; color: #2E6E7E; }
+.stat .label { color: #595959; font-size: 0.9em; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e0e0e0; font-size: 0.92em; }
+th { color: #1F3864; }
+details { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px 16px; margin: 10px 0; }
+summary { font-weight: 600; cursor: pointer; color: #1F3864; }
+code { background: #eef1f4; padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+.disclaimer { font-size: 0.85em; color: #595959; border-top: 1px solid #ddd; padding-top: 16px; margin-top: 48px; }
+footer { margin-top: 40px; font-size: 0.85em; color: #888; }
+</style>
+</head>
+<body>
+
+<h1>MF Scheme Data</h1>
+<p class="tagline">Free, auto-published TER, AUM &amp; ISIN reference data for the full Indian mutual fund universe.</p>
+
+<div class="stats">
+<div class="stat"><div class="num">~14,000+</div><div class="label">AMFI scheme codes</div></div>
+<div class="stat"><div class="num">All</div><div class="label">plans &amp; options, not just Direct Growth</div></div>
+<div class="stat"><div class="num">3</div><div class="label">AMFI sources, no third-party aggregator</div></div>
+<div class="stat"><div class="num">Weekly</div><div class="label">automatic refresh</div></div>
+</div>
+
+<div class="card">
+<p><strong>Download the latest data:</strong></p>
+<a class="button" href="exports/mf_ter_aum_latest.json">🔗 Raw Data (JSON)</a>
+<a class="button" href="exports/mf_ter_aum_latest.csv">📄 Raw Data (CSV)</a>
+</div>
+
+<h2>What this actually is</h2>
+<p>AMFI publishes scheme identity (scheme code, ISIN, name), Total Expense
+Ratio, and Average AUM as three separate datasets, keyed two different
+ways — TER by NSDL's own scheme code, everything else by AMFI's scheme
+code. This project fetches all three directly from AMFI's own endpoints,
+resolves the identifier mismatch, and republishes one merged,
+AMFI-scheme-code-keyed dataset covering every plan and option of every
+scheme — not just Direct Growth, which is what most public sources
+limit themselves to.</p>
+
+<h3>Fields</h3>
+<table>
+<tr><th>Field</th><th>Meaning</th></tr>
+<tr><td><code>(dict key)</code></td><td>AMFI scheme code</td></tr>
+<tr><td><code>name</code></td><td>Scheme name (this specific plan/option)</td></tr>
+<tr><td><code>plan</code></td><td><code>direct</code> / <code>regular</code> / <code>unspecified</code></td></tr>
+<tr><td><code>isin_g</code></td><td>ISIN (Growth), if assigned</td></tr>
+<tr><td><code>isin_r</code></td><td>ISIN (Reinvestment), if assigned</td></tr>
+<tr><td><code>aum</code></td><td>Average AUM, absolute rupees, most recent AMFI-published period</td></tr>
+<tr><td><code>ter</code></td><td>Total Expense Ratio, percent</td></tr>
+<tr><td><code>ter_date</code></td><td>Date the TER figure is as-of</td></tr>
+<tr><td><code>nsdl</code></td><td>Matched NSDL scheme code (TER source), for traceability</td></tr>
+</table>
+
+<h3>What makes it different</h3>
+<ul>
+<li><strong>No fabricated data.</strong> A field AMFI hasn't published
+for a scheme, or that couldn't be confidently matched, is simply
+omitted — never filled in with a guess or a zero.</li>
+<li><strong>Full universe, not just Direct Growth.</strong> Every plan
+and option variant is included, since downstream consumers may need
+Regular plans, IDCW options, or other variants, not only the
+Direct-Growth subset most public sources limit themselves to.</li>
+<li><strong>Sourced directly from AMFI</strong>, not a third-party
+aggregator — no additional layer of staleness or reformatting risk
+between AMFI's own disclosure and this dataset.</li>
+<li><strong>Free and open.</strong> No login, no account, no tracking,
+no subscription.</li>
+</ul>
+
+<h2>Who this is for</h2>
+<p>Built for anyone who needs to join a fund's cost (TER) and size (AUM)
+to its identity (AMFI scheme code, ISIN) without maintaining their own
+AMFI scraper and NSDL-to-AMFI matching logic. This is the data behind
+<a href="https://github.com/LessOneLabs/mf-quant-analyzer-data">MF Quant
+Analyzer</a>'s Efficiency scoring, and is published standalone since the
+matching problem it solves is useful independent of that specific
+ranking methodology.</p>
+
+<h2>How it works</h2>
+<ol>
+<li>An automated weekly pipeline pulls AMFI's own scheme master
+(<code>NAVAll.txt</code>), TER disclosure endpoint, and scheme-wise
+AAUM endpoint directly.</li>
+<li>TER's NSDL-keyed records are matched to AMFI scheme codes by
+normalizing fund names on both sides (stripping plan/option words,
+historical-name parentheticals, and known AMC renames), falling back
+to a manual override list for cases the automatic logic can't resolve
+confidently.</li>
+<li>AUM joins directly by AMFI scheme code — no matching needed.</li>
+<li>The merged result is republished weekly as JSON and CSV.</li>
+</ol>
+
+<h2>Frequently asked questions</h2>
+
+<details>
+<summary>Is this free?</summary>
+<p>Yes, entirely. No account, no login, no paid tier, no data
+collection. Download the JSON or CSV and it's yours.</p>
+</details>
+
+<details>
+<summary>Why isn't every scheme's TER or AUM populated?</summary>
+<p>Two reasons: AMFI may not have published AUM for a scheme in the
+latest period (e.g. a very new or very small scheme), or the TER
+matching logic couldn't confidently resolve that scheme's NSDL-keyed
+TER record to an AMFI code. Either way, the field is simply absent
+rather than guessed.</p>
+</details>
+
+<details>
+<summary>Why does this include Regular plans and IDCW options, not just Direct Growth?</summary>
+<p>Most public sources limit themselves to Direct Growth. This dataset
+covers every plan/option variant of every scheme, since downstream
+consumers may need the full picture — a Regular plan's TER, for
+instance, differs meaningfully from its Direct-plan counterpart.</p>
+</details>
+
+<details>
+<summary>How often is it updated?</summary>
+<p>Weekly, via an automated pipeline that pulls AMFI's latest published
+data and republishes both the JSON and CSV.</p>
+</details>
+
+<details>
+<summary>Is the source code available?</summary>
+<p>The data-fetching and matching pipeline is maintained privately; the
+published data (this repo, updated weekly) is public and free to use,
+under LessOneLabs on GitHub.</p>
+</details>
+
+<details>
+<summary>Is this affiliated with AMFI, SEBI, or any fund house?</summary>
+<p>No. This project has no affiliation with any Asset Management
+Company, SEBI, or AMFI. It uses AMFI's publicly published data as an
+input, nothing more.</p>
+</details>
+
+<div class="disclaimer">
+<strong>Disclaimer:</strong> This data is for informational and
+educational purposes only and does not constitute investment advice.
+Mutual fund investments are subject to market risks. Read all
+scheme-related documents carefully before investing. Past performance
+is not indicative of future returns. This project has no affiliation
+with any AMC, SEBI, or AMFI.
+</div>
+
+<footer>
+Built and maintained by <a href="https://github.com/LessOneLabs">LessOneLabs</a>.
+Also see <a href="https://github.com/LessOneLabs/mf-quant-analyzer-data">MF Quant Analyzer</a>, which consumes this data.
+Machine-readable summary: <a href="llms.txt">llms.txt</a>.
+</footer>
+
+</body>
+</html>
