@@ -97,10 +97,24 @@ scheme master, just without cost/size data currently attached.
   not a data quality bug — see the FAQ on the main page for why.
 - Coverage is very high but deliberately not 100% — ambiguous or
   ungrouped edge cases are left without a value rather than guessed.
+- `plan` is derived from the scheme's full name (AMFI's NAV history
+  report name first, then the previous refresh's name). AMFI's own
+  separate Plan column is blank for several AMCs, so it isn't relied on.
+  `unspecified` mostly means a legacy scheme with no Direct/Regular split.
+- `ter` is each scheme's latest disclosed TER across the two most recent
+  disclosure months. A TER stays in force until it changes, so early in a
+  month you still get last month's figure for schemes that haven't filed
+  again yet. `aum` is from the most recent **fully published** AMFI
+  quarter: a quarter AMFI has only just opened is skipped until it's
+  populated.
 
 ## Update cadence & versioning
 
 - Refreshed weekly. `generated_at` in the JSON tells you exactly when.
+- **Known gap:** refreshes from 2026-08-24 to 2026-09-14 published an
+  empty `funds` object, caused by an upstream AMFI file-format change.
+  Fixed on 2026-10-02. The pipeline now refuses to publish an empty or
+  shrunken dataset, and keeps the previous one instead.
 - **No versioning guarantee on the schema** — this is a young project.
   If you're building something that depends on the exact field set,
   check `generated_at` changes and re-validate the shape occasionally
